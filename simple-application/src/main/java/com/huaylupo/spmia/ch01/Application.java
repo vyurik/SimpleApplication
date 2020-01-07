@@ -23,6 +23,7 @@ public class Application {
 	public String helloGET( 
 			@PathVariable("firstName") String firstName,
 			@RequestParam("lastName") String lastName) {
+		System.out.println("firstName = " + firstName); //added line by Vitaly
 		return String.format("{\"message\":\"Hello %s %s\"}",firstName, lastName);
 	}
 	
